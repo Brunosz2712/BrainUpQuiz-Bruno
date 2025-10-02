@@ -61,7 +61,7 @@ public class QuizController {
         return ResponseEntity.notFound().build();
     }
 
-    // GET /quiz/stream/admin user
+    // GET /quiz/stream/admin
     @GetMapping("/stream/admin")
     public SseEmitter streamAdmin() {
         SseEmitter emitter = new SseEmitter(Long.MAX_VALUE);
